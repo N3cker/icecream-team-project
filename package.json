@@ -3,7 +3,7 @@
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://github.com/N3cker/icecream-team-project.git",
+  "homepage": "https://n3cker.github.io/icecream-team-project/",
   "scripts": {
     "dev": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /icecream-team-project/"
@@ -16,7 +16,7 @@
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/goitacademy/parcel-project-template/issues"
+    "url": "https://n3cker.github.io/icecream-team-project/issues"
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.5",
