@@ -1,7 +1,11 @@
-/*
- * Główny plik dla stylów.
- * Wszystkie partials podłączamy tutaj.
- */
+@import 'partials/header';
+@import 'partials/products';
+@import 'partials/about';
+@import 'partials/advantages';
+@import 'partials/gallery';
+@import 'partials/customer-reviews';
+@import 'partials/contacts';
+@import 'partials/footer';
 
-// Style dla pliku z przykładem HTML fragmentu
-@import './example';
+@import 'vars/colors';
+@import 'vars/fonts';
