@@ -1,1 +1,79 @@
-<h1>header</h1>
+<header>
+    <div class="container">
+        <div class="topbox">
+            <a class="topbox__logo" href="#">
+                <picture class="logo">
+                    <source srcset="/images/header/mobile/logo-mobile.png 1x, /images/header/mobile/logo-mobile@2x.png 2x"
+                        media="(min-width: 320px) and (max-width: 767px)" />
+                    <source srcset="/images/header/tablet/logo-tablet.png 1x, /images/header/tablet/logo-tablet@2x.png 2x"
+                        media="(min-width: 768px) and (max-width: 1199px)" />
+                    <source srcset="/images/header/desktop/logo-desktop.png 1x, /images/header/desktop/logo-desktop@2x.png 2x"
+                        media="(min-width: 1200px)" />
+                    <img src="/images/header/mobile/logo-mobile.png" alt="logo">
+                </picture>
+            </a>
+            <nav class="topbox__navi">
+                <ul class="web">
+                    <li class="web__item">
+                        <a class="web__link" href="#">Home</a>
+                    </li>
+                    <li class="web__item">
+                        <a class="web__link" href="#">About us</a>
+                    </li>
+                    <li class="web__item">
+                        <a class="web__link" href="#">How it's made?</a>
+                    </li>
+                    <li class="web__item">
+                        <a class="web__link" href="#">Our products</a>
+                    </li>
+                    <li class="web__item">
+                        <a class="web__link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="button button--header" type="button">Buy now</button>
+        </div>
+        <div class="centralbox">
+            <div class="centralbox__passion">
+                <h1 class="centralbox__passion_title">
+                    ice cream made with passion
+                </h1>
+                <button class="button button--products" type="button">Products</button>
+                <button class="button butto--made" type="button">How it's made?</button>
+            </div>
+            <div class="milktext">
+                <picture class="fotomilk">
+                    <source srcset="/images/header/tablet/milk-tablet.png 1x, /images/header/tablet/milk-tablet@2x.png 2x"
+                        media="(min-width: 768px) and (max-width: 1199px)" />
+                    <source srcset="/images/header/desktop/milk-desktop.png 1x, /images/header/desktop/milk-desktop@2x.png 2x"
+                        media="(min-width: 1200px)" />
+                    <img src="/images/header/tablet/milk-tablet.png" alt="a jug of milk">
+                </picture>
+                
+                <p class="milktext__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                </p>
+            </div>
+            <picture class="fotoice">
+                <source srcset="/images/header/mobile/ice-mobile.png 1x, /images/header/mobile/ice-mobile@2x.png 2x"
+                    media="(min-width: 320px) and (max-width: 767px)" />
+                <source srcset="/images/header/tablet/ice-tablet.png 1x, /images/header/tablet/ice-tablet@2x.png 2x"
+                    media="(min-width: 768px) and (max-width: 1199px)" />
+                <source srcset="/images/header/desktop/ice-desktop.png 1x, /images/header/desktop/ice-desktop@2x.png 2x"
+                    media="(min-width: 1200px)" />
+                <img src="/images/header/mobile/ice-mobile.png" alt="colored ice">
+            </picture>
+            <div class="numbers">
+                <p class="numbers__item">16</p>
+                <p class="numbers__item">23</p>
+            </div>
+            <picture class="fotogirl">
+                <source srcset="/images/header/tablet/girl-tablet.png 1x, /images/header/tablet/girl-tablet@2x.png 2x"
+                    media="(min-width: 768px) and (max-width: 1199px)" />
+                <source srcset="/images/header/desktop/girl-desktop.png 1x, /images/header/desktop/girl-desktop@2x.png 2x"
+                    media="(min-width: 1200px)" />
+                <img src="/images/header/tablet/girl-tablet.png" alt="girl with ice">
+            </picture>
+        </div>
+    </div>
+</header>
