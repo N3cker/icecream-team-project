@@ -1,0 +1,116 @@
+.contact {
+  background-color: $color-pink-background;
+}
+
+.contact__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.contact__btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 54px;
+}
+
+.info__section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 220px;
+  background: $color-white;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+  padding: 43px 20px;
+}
+
+.contact__heading {
+  width: 80px;
+  height: 16px;
+  background: #f0d1a5;
+  border-radius: 4px;
+  margin: 0 120px 25px 20px;
+  background-color: $color-creamy;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact__heading--text {
+  font-weight: 500;
+  font-size: 12px;
+  color: $color-white;
+}
+
+.contact__heading--green {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 70px 25px 20px;
+  width: 130px;
+  height: 16px;
+  background: #f0d1a5;
+  border-radius: 4px;
+  background-color: $color-green;
+}
+
+.contact__list {
+  padding-top: 25px;
+  &:not(:last-child) {
+    padding: 0 0 25px;
+    border-bottom: 1px solid #e1e1e1;
+  }
+}
+
+.contact__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.contact__town {
+  margin-bottom: 10px;
+}
+
+.contact__paragraph {
+  font-family: $font-main;
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+}
+
+.contact__item--hours {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 186%;
+  color: $color-pink-2;
+}
+
+.contact__item--description {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  color: #907e82;
+  //   Dodać ten kolor do zmiennych
+}
+
+.contact__link--item {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  color: #907e82;
+  text-decoration: none;
+}
+
+.contact__btn {
+  gap: 10px;
+}
+
+.contact__btn--item {
+  width: 161px;
+  height: 44px;
+  background: #ffffff;
+  border-radius: 22px;
+  border-style: none;
+}
