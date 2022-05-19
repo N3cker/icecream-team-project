@@ -1,2 +1,16 @@
+@import 'vars/colors';
+@import 'vars/fonts';
+
+@import 'partials/global';
+@import 'partials/buttons';
 
 @import "./components/social-icons";
+@import 'partials/header';
+@import 'partials/products';
+@import 'partials/about';
+@import 'partials/advantages';
+@import 'partials/gallery';
+@import 'partials/customer-reviews';
+@import 'partials/contacts';
+@import 'partials/footer';
+

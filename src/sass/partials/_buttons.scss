@@ -1,0 +1,53 @@
+.btn {
+    border: none;
+    border-radius: 20px;
+    padding: 13px 25px;
+    font-size: 14px;
+    font-weight: 400px;
+}
+
+.btn--raspberry {
+    background-color: $color-raspberry;
+    color: $color-white;
+
+    &:hover, &:active {
+        background-color: $color-btn-raspberry-hvr;
+    }
+}
+
+.btn--raspberry-hero {
+    background-color: $color-raspberry;
+    color: $color-white;
+
+    @media (max-width: 1279px) {
+        padding: 10px 15px;
+        font-size: 8px;
+    }
+
+    &:hover, &:active {
+        background-color: $color-btn-raspberry-hvr;
+    }
+}
+
+.btn--white {
+    background-color: $color-white;
+    color: $color-raspberry;
+
+    &:hover, &:active {
+        background-color: $color-btn-white-hvr;
+    }
+}
+
+.btn--white-hero {
+    background-color: $color-white;
+    color: $color-raspberry;
+
+    @media (max-width: 1279px) {
+        padding: 10px 15px;
+        font-size: 8px;
+    }
+
+    &:hover, &:active {
+        background-color: $color-btn-white-hvr;
+    }
+}
