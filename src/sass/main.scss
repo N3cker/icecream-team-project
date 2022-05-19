@@ -1,3 +1,8 @@
+@import 'vars/colors';
+@import 'vars/fonts';
+
+@import 'partials/global';
+
 @import 'partials/header';
 @import 'partials/products';
 @import 'partials/about';
@@ -6,6 +11,3 @@
 @import 'partials/customer-reviews';
 @import 'partials/contacts';
 @import 'partials/footer';
-
-@import 'vars/colors';
-@import 'vars/fonts';
