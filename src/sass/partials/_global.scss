@@ -48,6 +48,28 @@ table {
 	border-spacing: 0;
 }
 
+body {
+    font-family: $font-main;
+
+    h2 {
+        font-family: $font-head;
+        font-size: 34px;
+        font-weight: 400;
+        color: $color-raspberry;
+        margin: 100px;
+        letter-spacing: 4%;
+        text-align: center;
+
+        @media (min-width: 768px) and (max-width: 1279px) {
+            font-size: 48px;
+        }
+
+        @media (min-width: 1280px) {
+            font-size: 58px;
+        }
+    }
+}
+
 .hidden {
     position: absolute;
     top: -9999px;
@@ -73,7 +95,6 @@ table {
     padding: 13px 25px;
     font-size: 14px;
     font-weight: 400px;
-    font-family: $font-main;
 }
 
 .btn--raspberry {
