@@ -24,8 +24,6 @@
     &__item {
         background-color: $color-pink-1;
         border-radius: 24px;
-        margin-left: 15px;
-        margin-right: 15px;
         position: relative;
 
 
@@ -33,7 +31,7 @@
             content: url(../images/products/products1mobile@1x.png);
             position: absolute;
             z-index: 1;
-            top: -150px;
+            top: -115px;
             left: 50%;
             transform: translateX(-50%);
         }
@@ -45,7 +43,7 @@
                 content: url(../images/products/products2mobile@1x.png);
                 position: absolute;
                 z-index: 1;
-                top: -150px;
+                top: -115px;
                 left: 50%;
                 transform: translateX(-50%);
             }
@@ -58,7 +56,7 @@
                 content: url(../images/products/products3mobile@1x.png);
                 position: absolute;
                 z-index: 1;
-                top: -150px;
+                top: -115px;
                 left: 50%;
                 transform: translateX(-50%);
             }
