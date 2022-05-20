@@ -36,6 +36,7 @@
         text-transform: uppercase;
         padding-bottom: 16px;
         color: $color-raspberry;
+
     }
 
     &__p {
@@ -93,4 +94,4 @@
     .advantages__item:not(:last-child) {
         margin-right: 30px;
     }
-}
+} 
