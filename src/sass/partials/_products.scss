@@ -12,7 +12,7 @@
     &__h2 {
         text-transform: uppercase;
         margin-top: 15px;
-        margin-bottom: 141px;
+        margin-bottom: 144px;
     }
 
     &__list {
@@ -25,7 +25,7 @@
         background-color: $color-pink-1;
         border-radius: 24px;
         position: relative;
-
+        
 
         &--icecream::before {
             content: url(../images/products/products1mobile@1x.png);
@@ -65,7 +65,7 @@
                     content: "";
                     height: 6px;
                     width: 26px;
-                    top: 47%;
+                    top: 45%;
                     left: 50%;
                     display: inline-block;
                     position: absolute;
@@ -98,6 +98,7 @@
         line-height: 1.5;
         padding: 0px 40px;
         margin-top: 66px;
+        height: 124px;
     }
 
     &__link {
@@ -109,14 +110,10 @@
         background-color: $color-white;
         justify-content: center;
         align-items: center;
-        margin-bottom: 40px;
-        margin-top: 30px;
-        // margin: 30px 120px 40px 120px;
-
+        margin: 30px auto 40px auto;
 
         &:hover,
         &:focus {
-            fill: $color-btn-white-hvr;
             background-color: $color-btn-raspberry-hvr;
         }
     }
@@ -124,6 +121,10 @@
     &__icon {
         fill: $color-raspberry;
         
+        &:hover,
+        &:focus{
+            fill: $color-btn-white-hvr;
+        }
     }
 
 }
