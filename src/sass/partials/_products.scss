@@ -96,10 +96,11 @@
         color: $color-white;
         text-align: center;
         line-height: 1.5;
-        padding: 0px 40px;
+        // padding: 0px 40px;
+        margin: 0 auto;
         margin-top: 66px;
         height: 124px;
-        max-width: 200px;
+        max-width: 185px;
     }
 
     &__link {
