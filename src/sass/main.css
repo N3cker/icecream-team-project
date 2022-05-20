@@ -177,6 +177,8 @@ section {
 }
 
 .contact__box {
+  position: relative;
+  top: -215px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -202,6 +204,7 @@ section {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 54px;
+  gap: 10px;
 }
 
 .info__section {
@@ -264,7 +267,7 @@ section {
 }
 
 .contact__list {
-  padding-top: 25px;
+  padding-top: 25px !important;
 }
 
 .contact__list:not(:last-child) {
@@ -309,15 +312,36 @@ section {
   text-decoration: none;
 }
 
-.contact__btn {
-  gap: 10px;
-}
-
 .contact__btn--item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
   width: 161px;
   height: 44px;
   background: #ffffff;
   border-radius: 22px;
   border-style: none;
+  background-color: #FFF;
+  color: #D41443;
+  fill: #FFF;
+}
+
+.contact__btn--item:first-child {
+  background-color: #D41443;
+  color: #FFF;
+  fill: #D41443;
+}
+
+.contact__btn--icon {
+  margin: 0 5%;
 }
 /*# sourceMappingURL=main.css.map */
