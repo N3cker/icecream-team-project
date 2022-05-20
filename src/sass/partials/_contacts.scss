@@ -2,9 +2,12 @@
   background-color: $color-pink-background;
 }
 
-.contact__box {
+.container {
   position: relative;
   top: -215px;
+}
+
+.contact__box {
   display: flex;
   flex-direction: column;
   align-items: center;

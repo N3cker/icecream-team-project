@@ -176,9 +176,12 @@ section {
   background-color: #FFF5F6;
 }
 
-.contact__box {
+.container {
   position: relative;
   top: -215px;
+}
+
+.contact__box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
