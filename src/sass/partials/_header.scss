@@ -1,0 +1,22 @@
+header {
+    background-color: $color-pink-1;
+}
+.topbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    fill: rgba(212, 20, 67, 1);
+
+    &__logo {
+        max-width: 199px;
+        max-height: 50px;
+    }
+}
+.web, .btn--white {
+    display: none;
+}
+.header__menu {
+    width: 20px;
+    height: 12px;   
+}
