@@ -87,7 +87,7 @@
         letter-spacing: 4%;
         margin-top: 22px;
         margin-top: 161px;
-    }
+        }
 
     &__text {
         font-family: $font-main;
@@ -99,6 +99,7 @@
         padding: 0px 40px;
         margin-top: 66px;
         height: 124px;
+        max-width: 200px;
     }
 
     &__link {
