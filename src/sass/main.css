@@ -346,5 +346,100 @@ section {
 
 .contact__btn--icon {
   margin: 0 5%;
+.advantages__values1::before {
+  content: url(../images/advantages/icon1advantages.png);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 16px;
+}
+
+.advantages__values2::before {
+  content: url(../images/advantages/icon2advantages.png);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 16px;
+}
+
+.advantages__values3::before {
+  content: url(../images/advantages/icon3advantages.png);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 16px;
+}
+
+.advantages {
+  display: block;
+  margin-left: 20px;
+  margin-right: 70px;
+}
+
+.advantages__item {
+  margin-top: 38px;
+}
+
+.advantages__values {
+  font-family: "Titan One", cursive;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.139;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding-bottom: 16px;
+  color: #D41443;
+}
+
+.advantages__p {
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.667;
+  letter-spacing: 0.02em;
+  color: #000000;
+}
+
+@media screen and (min-width: 768px) {
+  .advantages {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 36px;
+  }
+  .advantages__p {
+    font-size: 14px;
+    line-height: 1.714;
+  }
+  .advantages__item {
+    width: 180px;
+    -ms-flex-preferred-size: calc(100% / 3 - 30px);
+        flex-basis: calc(100% / 3 - 30px);
+  }
+  .advantages__item:not(:last-child) {
+    margin-right: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .advantages {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 115px;
+  }
+  .advantages__p {
+    font-size: 16px;
+    line-height: 1.756;
+  }
+  .advantages__item {
+    -ms-flex-preferred-size: calc(100% / 3 - 30px);
+        flex-basis: calc(100% / 3 - 30px);
+  }
+  .advantages__item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
