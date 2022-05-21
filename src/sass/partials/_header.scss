@@ -1,0 +1,130 @@
+header {
+    background-color: $color-pink-1;
+    height: 502px;
+}
+.topbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    fill: rgba(212, 20, 67, 1);
+    padding-top: 6px;
+
+    &__logo {
+        max-width: 199px;
+        max-height: 50px;
+    }
+}
+.web, .btn--white, .milktext, .numbers, .fotogirl  {
+    display: none;
+}
+.header__menu {
+    width: 20px;
+    height: 12px;    
+}
+.centralbox {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    &__ellipse{
+        position: absolute;
+        top: 27px;
+        left: 36px;
+        z-index: 0;
+        width: 346px;
+        height: 344px;
+        border-radius: 50%;
+        background-color: $color-pink-3;
+    }
+    &__passion {
+        
+        z-index: 2;
+        max-width: 218px;
+        background-color: transparent;
+        font-family: $font-head;
+        text-transform: uppercase;
+        font-size: 26px;
+        color: white;
+    }
+    &__passion_title2 {
+        font-size: 48px;
+        color: $color-raspberry;
+    }
+}
+.btn {
+    margin-top: 19px;
+}
+.fotoice {
+    position: relative;
+    top: 36px;
+    right: 117px;
+    z-index: 1;
+}
+@media screen and (min-width:768px) {
+    header {
+        height: 399px;
+    }
+    .topbox {
+        background-color: transparent;
+    }
+    .btn--white {
+        display: flex;
+        font-size: 16px;
+        font-weight: 700;
+        text-align: center;
+        line-height: 1.3em;
+        padding-left: 37px;
+    }
+        .milktext, .numbers, .fotogirl {
+            display: flex;
+        }
+    .milktext {
+        position: absolute;
+        bottom: 20px;
+        left: 0;
+
+        &__text {
+            font-size: 8px;
+            line-height: 1.5em;
+            width: 114px;
+            height: 48px;
+            color: rgba(255, 255, 255, 1);
+        }
+    }
+       .fotogirl {
+           position: absolute;
+           bottom: 12px;
+           right: 0;
+       } 
+       .fotoice {
+           top: -10px;
+           right: -90px;
+       }
+       .numbers {
+           display: flex;
+           flex-direction: column;
+           position: absolute;
+           top: 0;
+           right: 0;
+           font-size: 28px;
+           color: $color-raspberry;
+           font-family: $font-head;
+           margin-top: 24px;
+           line-height: 1.142em;
+       }
+       .centralbox__passion {
+           position: relative;
+           top: -50px;
+           left: 0px;
+       }
+       .centralbox__ellipse {
+           width: 324px;
+           height: 322px;
+           top: -45px;
+           left: 230px;
+       }
+       .btn--white_text {
+           margin-left: 12px;
+           padding-right: 19px;
+       }
+}
