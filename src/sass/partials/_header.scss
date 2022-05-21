@@ -108,8 +108,10 @@ header {
        }
        .numbers {
            display: flex;
+           position: relative;
            flex-direction: column;
            position: absolute;
+           z-index: 2;
            top: 0;
            right: 0;
            font-size: 28px;
@@ -117,7 +119,10 @@ header {
            font-family: $font-head;
            margin-top: 24px;
            line-height: 1.142em;
-           &__item::after {
+           &__item::before {
+               position: absolute;
+               z-index: 1;
+               transform: translate(25px, -5px);
                 content:"";
                 width: 16px;
                 height: 16px;
