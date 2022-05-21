@@ -67,14 +67,10 @@ section {
 
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-    .section-advantages {
-        padding-top: 66px;
-        padding-bottom: 140px;
-    }
-
     .advantages{
         display: flex;
-        // justify-content: center;
+        padding-top: 66px;
+        padding-bottom: 140px;
 
         &__p {
             font-size: 14px;
@@ -114,14 +110,11 @@ section {
 }
 
 @media screen and (min-width: 1200px) {
-    .section-advantages {
-        padding-top: 39px;
-        padding-bottom: 139px;
-    }
-
     .advantages {
         display: flex;
         justify-content: center;
+        padding-top: 39px;
+        padding-bottom: 139px;
 
         &__p {
             font-size: 16px;
@@ -131,8 +124,8 @@ section {
         &__item {
             flex-basis: calc(100% / 3 - 30px);
             max-width: 330px;
-            margin-left: 20px;
-            margin-right: 70px;
+            margin-left: 0;
+            margin-right: 0;
         }
 
         &__values {
