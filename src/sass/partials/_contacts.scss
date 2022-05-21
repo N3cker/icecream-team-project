@@ -213,3 +213,84 @@
     font-size: 16px;
   }
 }
+
+@media screen and (min-width: 1280px) {
+  .contact__box {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .contact {
+    background-image: url(../images/contact/background-contact.png),
+      linear-gradient(to bottom, $color-white 23%, $color-pink-background 23%);
+    background-repeat: no-repeat;
+    background-size: 382px;
+    background-color: $color-pink-background;
+    background-size: contain;
+    background-position-y: center;
+
+    // background-image: linear-gradient(to bottom, $color-white 23%, $color-pink-background 23%);
+  }
+
+  .info__section {
+    width: 330px;
+    height: 572px;
+    padding: 51px 44px 62px;
+  }
+
+  .contact__box {
+    gap: 29px;
+  }
+
+  .contact__town {
+    padding-bottom: 0;
+  }
+
+  .contact__paragraph {
+    line-height: 186%;
+    font-size: 16px;
+  }
+  .contact__item--description {
+    line-height: 183%;
+    font-size: 16px;
+  }
+
+  .contact__item--hours {
+    line-height: 186%;
+    font-size: 16px;
+  }
+  .contact__link--item {
+    font-size: 16px;
+  }
+
+  .contact__list {
+    padding-top: 32px;
+  }
+
+  .contact__heading {
+    width: 73px;
+    height: 28px;
+    border-radius: 6px;
+  }
+  .contact__heading--text {
+    font-size: 16px;
+    line-height: 186%;
+    letter-spacing: 0.04em;
+  }
+
+  .contact__heading--green {
+    font-size: 16px;
+    line-height: 186%;
+    letter-spacing: 0.04em;
+  }
+
+  .contact__btn--icon {
+    margin-left: 13px;
+    justify-content: center;
+  }
+
+  .contact__btn {
+    margin-top: 86px;
+    gap: 15px;
+  }
+}
