@@ -3,3 +3,16 @@
         height: 540px;
     }
 }
+
+.splide__slide {
+    div {
+        p{
+            text-align: center;
+            $lineH: 2em;
+            line-height: var($lineH);
+            padding: var($lineH);
+            padding-block: 0;/*reset to set first line right at top */
+            background: repeating-linear-gradient(transparent 0 calc(var(lineH) - 1px), #bdbdbd 0  var(--lineH))
+        }
+    }
+}
