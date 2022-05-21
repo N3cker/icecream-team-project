@@ -67,6 +67,7 @@ header {
         font-weight: 700;
         text-align: center;
         line-height: 1.3em;
+        padding-left: 37px;
     }
         .milktext, .numbers, .fotogirl {
             display: flex;
@@ -102,8 +103,11 @@ header {
            line-height: 1.142em;
        }
        .centralbox__ellipse {
-           position: absolute;
-           top:0;
-           right: 0;
+           width: 324px;
+           height: 322px;
+       }
+       .btn--white_text {
+           margin-left: 12px;
+           padding-right: 19px;
        }
 }
