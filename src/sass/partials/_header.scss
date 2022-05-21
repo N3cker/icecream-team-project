@@ -61,6 +61,12 @@ header {
     z-index: 1;
 }
 @media screen and (min-width:768px) {
+    header {
+        height: 399px;
+    }
+    .topbox {
+        background-color: transparent;
+    }
     .btn--white {
         display: flex;
         font-size: 16px;
@@ -74,7 +80,7 @@ header {
         }
     .milktext {
         position: absolute;
-        bottom: -60px;
+        bottom: 20px;
         left: 0;
 
         &__text {
@@ -87,9 +93,13 @@ header {
     }
        .fotogirl {
            position: absolute;
-           bottom: -90px;
+           bottom: 12px;
            right: 0;
        } 
+       .fotoice {
+           top: -10px;
+           right: -90px;
+       }
        .numbers {
            display: flex;
            flex-direction: column;
@@ -102,9 +112,16 @@ header {
            margin-top: 24px;
            line-height: 1.142em;
        }
+       .centralbox__passion {
+           position: relative;
+           top: -50px;
+           left: 0px;
+       }
        .centralbox__ellipse {
            width: 324px;
            height: 322px;
+           top: -45px;
+           left: 230px;
        }
        .btn--white_text {
            margin-left: 12px;
