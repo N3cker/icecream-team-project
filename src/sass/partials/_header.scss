@@ -7,8 +7,12 @@ header {
     height: 502px;
 }
 .topbox {
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 0 20px;
     display: flex;
     justify-content: space-between;
+    position: relative;
     align-items: center;
     fill: rgba(212, 20, 67, 1);
     padding-top: 6px;
@@ -21,7 +25,7 @@ header {
 .web, .btn--white, .milktext, .numbers, .fotogirl  {
     display: none;
 }
-.header__menu {
+.header__menu { 
     width: 20px;
     height: 12px;    
 }
@@ -42,23 +46,27 @@ header {
         
     }
     &__passion {
-        
         z-index: 2;
         max-width: 218px;
         background-color: transparent;
-        font-family: $font-head;
         text-transform: uppercase;
         font-size: 26px;
         color: white;
+        
     }
+    &__passion_title{
+        font-size: 26px;
+        margin-bottom: 20px;
+        font-family: $font-head;
+    }
+
     &__passion_title2 {
         font-size: 48px;
         color: $color-raspberry;
+        font-family: $font-head;
     }
 }
-.btn {
-    margin-top: 19px;
-}
+
 .fotoice {
     position: relative;
     top: 36px;
@@ -67,10 +75,23 @@ header {
 }
 @media screen and (min-width:768px) {
     header {
-        height: 399px;
+        height: 394px;
     }
     .topbox {
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 0 20px;
+        display: flex;
+        align-items: center;
+        justify-content: start;
         background-color: transparent;
+        padding-top: 37px; 
+        &__logo {
+            margin-right: 245px;
+        }
+    }
+    .header__menu {
+        margin-right: 30px;
     }
     .btn--white {
         display: flex;
@@ -85,7 +106,7 @@ header {
         }
     .milktext {
         position: absolute;
-        bottom: 20px;
+        bottom: 50px;
         left: 0;
 
         &__text {
@@ -94,35 +115,55 @@ header {
             width: 114px;
             height: 48px;
             color: rgba(255, 255, 255, 1);
-            
+            margin-bottom: 20px;
         }
+        &__item {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        &__icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 18px;
+            height: 18px;
+            border-radius: 50%;
+            background-color: white;
+            fill: $color-raspberry;
+            font-size: 12px;
+        }
+        
     }
-    
+        
        .fotogirl {
            position: absolute;
-           bottom: 12px;
+           bottom: 33px;
            right: 0;
        } 
        .fotoice {
-           top: -10px;
-           right: -90px;
+           top: -30px;
+           right: -125px;
        }
        .numbers {
-           display: flex;
-           position: relative;
-            z-index: 2;
-           flex-direction: column;
-           position: absolute;
-           top: 0;
-           right: 0;
-           font-size: 28px;
-           color: $color-raspberry;
-           font-family: $font-head;
-           margin-top: 24px;
-           line-height: 1.142em;
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 0;
+            right: 8px;
+            font-size: 28px;
+            color: $color-raspberry;
+            font-family: $font-head;
+            margin-top: 24px;
+            line-height: 1.142em;
+
+            &__item {
+            position: relative;
+            z-index: 1;
+           }
            &__item::before {
                position: absolute;
-               z-index: 1;
+               z-index: -1;
                transform: translate(25px, -5px);
                 content:"";
                 width: 16px;
@@ -131,19 +172,210 @@ header {
                 border-radius: 50%;
            }
        }
-       .centralbox__passion {
-           position: relative;
-           top: -50px;
-           left: 0px;
+       .centralbox {
+           
+
+        &__passion {
+                position: relative;
+                
+                top: -90px;
+                left: 0px;
+                max-width: 180px;
+            }
+        &__passion_title {
+            font-size: 22px;
+            margin-bottom: 20px;
+            
+        }
+        &__passion_title2 {
+            font-size: 34px;
+        }
+
+            &__ellipse {
+                width: 324px;
+                height: 322px;
+                top: -45px;
+                left: 235px;
+            }
        }
-       .centralbox__ellipse {
-           width: 324px;
-           height: 322px;
-           top: -45px;
-           left: 230px;
-       }
+       
        .btn--white_text {
            margin-left: 12px;
            padding-right: 19px;
        }
+}
+@media screen and (min-width: 1200px){
+    header, .see {
+        height: 665px;
+    }
+    .topbox {
+        max-width: 1200px;
+        margin: 0 auto;
+        justify-content: start;
+
+        &__logo {
+            margin-right: 110px;
+        }
+        &__navi {
+            margin-right: 110px;
+        }
+    }
+    .header__menu {
+        display: none;
+    }
+    .web {
+        display: flex;
+        justify-content: space-between;
+        gap: 35px;
+        &__item {
+            display: flex;
+            
+        }
+        &__link {
+            text-decoration: none;
+            font-size: 16px;
+            color: white;
+            font-weight: 700;
+
+            &:hover, :active {
+                color: $color-raspberry;
+                
+            }
+        }
+    }
+    .centralbox {
+        
+        &__passion {
+            max-width: 277px;
+        }
+
+        &__passion_title {
+            font-size: 38px;
+            width: 277px;
+        }
+        &__passion_title2 {
+            font-size: 58px;
+        }
+        &__ellipse {
+            width: 538px;
+            height: 538px;
+            top: -10px;
+            left: 345px;
+        }
+    }
+    .fotoice {
+        top: 20px;
+        right: -200px;
+    }
+    .fotogirl {
+        bottom: -18px;
+    }
+    .milktext {
+        left: -20px;
+        bottom: 20px;
+
+        &__text {
+            font-size: 14px;
+            line-height: 1.4em;
+            width: 277px;
+            height: 78px;
+            margin-top: 30px;
+            padding-right: 80px;
+        }
+    }
+    .numbers {
+        font-size: 46px;
+        top: 36px;
+        
+        &__item::before{
+            transform: translate(35px, -5px);
+            width: 30px;
+            height: 30px;
+        }
+    }
+    .btn--raspberry-hero, .btn--white-hero  {
+        padding:12px 20px;
+    }
+}
+
+/*--------okno modalne-style------------*/
+.mobile-menu {
+    display: flex;
+    flex-direction: column;
+    height: 502px;
+    width: 250px;
+    background-color: $color-pink-1;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    right: 0;
+    transition: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    margin-left: 20px;
+
+        &__link {
+            text-decoration: none;
+                font-size: 14px;
+                color: white;
+                font-weight: 700;
+                line-height: 1.3em;
+            
+                &:hover,
+                :active {
+                    color: $color-raspberry;
+            
+                }
+
+        }
+}
+.botton {
+        border: none;
+        border-radius: 20px;
+        padding: 13px 25px;
+        font-size: 14px;
+        font-weight: 700px;
+        margin: 60px 20px 32px 20px;
+        line-height: 1.3em;
+}
+.botton--white {
+    background-color: $color-white;
+        color: $color-raspberry;
+    
+        &:hover,
+        &:active {
+            background-color: $color-btn-white-hvr;
+        }
+}
+.close-btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+}
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateY(100%);
+    transition: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+}
+@media screen and (min-width: 768px) {
+    .mobile-menu {
+        width: 254px;
+        height: 1020px;
+    }
 }
