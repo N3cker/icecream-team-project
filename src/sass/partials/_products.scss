@@ -77,7 +77,6 @@ padding-top: 120px;
                 }
     }
 
-
     &__label {
         font-family: $font-head;
         font-size: 20px;
@@ -97,7 +96,6 @@ padding-top: 120px;
         color: $color-white;
         text-align: center;
         line-height: 1.5;
-        // padding: 0px 40px;
         margin: 0 auto;
         margin-top: 66px;
         max-width: 185px;
@@ -110,6 +108,7 @@ padding-top: 120px;
         width: 40px;
         height: 40px;
         background-color: $color-white;
+        fill: $color-raspberry;
         justify-content: center;
         align-items: center;
         margin: 30px auto 40px auto;
@@ -117,14 +116,6 @@ padding-top: 120px;
         &:hover,
         &:focus {
             background-color: $color-btn-raspberry-hvr;
-        }
-    }
-
-    &__icon {
-        fill: $color-raspberry;
-        
-        &:hover,
-        &:focus{
             fill: $color-btn-white-hvr;
         }
     }
@@ -228,7 +219,6 @@ padding-top: 120px;
         color: $color-white;
         text-align: center;
         line-height: 1.5;
-        // padding: 0px 11px;
         margin: 0 auto;
         margin-top: 66px;
         max-width: 200px;
@@ -241,6 +231,7 @@ padding-top: 120px;
         width: 40px;
         height: 40px;
         background-color: $color-white;
+        fill: $color-raspberry;
         justify-content: center;
         align-items: center;
         margin: 40px auto 40px auto;
@@ -248,14 +239,6 @@ padding-top: 120px;
         &:hover,
         &:focus {
             background-color: $color-btn-raspberry-hvr;
-        }
-    }
-
-    &__icon {
-        fill: $color-raspberry;
-        
-        &:hover,
-        &:focus{
             fill: $color-btn-white-hvr;
         }
     }
@@ -292,9 +275,7 @@ padding-top: 127px;
         background-color: $color-pink-1;
         border-radius: 24px;
         position: relative;
-        width: 33%;
-        // width: 330px;
-        
+        width: 33%;        
 
         &--icecream::before {
             content: url(../images/products/products1mobile@1x.png);
@@ -362,7 +343,6 @@ padding-top: 127px;
         color: $color-white;
         text-align: center;
         line-height: 1.75;
-        // padding: 0px 45px;
         margin: 0 auto;
         margin-top: 70px;
         max-width: 300px;
@@ -375,21 +355,15 @@ padding-top: 127px;
         width: 40px;
         height: 40px;
         background-color: $color-white;
+        fill: $color-raspberry;
         justify-content: center;
         align-items: center;
         margin: 62px auto 50px auto;
 
+
         &:hover,
         &:focus {
             background-color: $color-btn-raspberry-hvr;
-        }
-    }
-
-    &__icon {
-        fill: $color-raspberry;
-        
-        &:hover,
-        &:focus{
             fill: $color-btn-white-hvr;
         }
     }
