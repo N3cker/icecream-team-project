@@ -20,12 +20,12 @@
 
         @media (min-width: 768px) and (max-width: 1279px) {
             width: 600px;
-            height: 150px;
+            height: 160px;
         }
 
         @media (min-width: 1280px) {
-            width: 700px;
-            height: 140px;
+            width: 890px;
+            height: 150px;
         }
         
         &::before {
@@ -66,11 +66,13 @@
         background: repeating-linear-gradient(transparent 0 calc($lineH - 1px), #E1E1E1 0  $lineH);
         
         @media (min-width: 768px) and (max-width: 1279px) {
-            max-width: 420px;
+            max-width: 490px;
+            font-size: 14px;
         }
 
         @media (min-width: 1280px) {
-            max-width: 560px;
+            max-width: 750px;
+            font-size: 16px;
         }
     }
 
@@ -78,6 +80,14 @@
         font-size: 14px;
         font-weight: 500;
         margin-top: 10px;
+
+        @media (min-width: 768px) and (max-width: 1279px) {
+            font-size: 16px;
+        }
+
+        @media (min-width:1280px) {
+            font-size: 20px;
+        }
     }
 }
 .container {
