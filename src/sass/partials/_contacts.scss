@@ -103,6 +103,10 @@
   line-height: 18px;
   color: #907e82;
   text-decoration: none;
+  &:hover,
+  &:focus {
+    color: #baa9ad;
+  }
 }
 
 .contact__btn--item {
@@ -110,6 +114,10 @@
     background-color: $color-raspberry;
     color: $color-white;
     fill: $color-raspberry;
+    &:hover,
+    &:focus {
+      background-color: $color-btn-raspberry-hvr;
+    }
   }
   display: flex;
   justify-content: space-evenly;
@@ -125,6 +133,10 @@
   background-color: $color-white;
   color: $color-raspberry;
   fill: $color-white;
+  &:hover,
+  &:focus {
+    background-color: $color-btn-white-hvr;
+  }
 }
 
 .contact__btn--icon {
