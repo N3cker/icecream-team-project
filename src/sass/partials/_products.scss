@@ -27,8 +27,7 @@ margin-top: 120px;
     &__item {
         background-color: $color-pink-1;
         border-radius: 24px;
-        position: relative;
-        
+        position: relative;   
 
         &--icecream::before {
             content: url(../images/products/products1mobile@1x.png);
@@ -101,7 +100,6 @@ margin-top: 120px;
         // padding: 0px 40px;
         margin: 0 auto;
         margin-top: 66px;
-        height: 124px;
         max-width: 185px;
     }
 
@@ -161,7 +159,7 @@ margin-top: 120px;
         background-color: $color-pink-1;
         border-radius: 24px;
         position: relative;
-        // max-width: 220px;
+        width: 33%;
         
 
         &--icecream::before {
@@ -233,8 +231,7 @@ margin-top: 120px;
         // padding: 0px 11px;
         margin: 0 auto;
         margin-top: 66px;
-        height: 124px;
-        max-width: 220px;
+        max-width: 200px;
     }
 
     &__link {
@@ -264,7 +261,7 @@ margin-top: 120px;
     }
 }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
 .products {
 margin-top: 127px;
 
@@ -295,7 +292,8 @@ margin-top: 127px;
         background-color: $color-pink-1;
         border-radius: 24px;
         position: relative;
-        // max-width: 330px;
+        width: 33%;
+        // width: 330px;
         
 
         &--icecream::before {
@@ -367,7 +365,6 @@ margin-top: 127px;
         // padding: 0px 45px;
         margin: 0 auto;
         margin-top: 70px;
-        // height: 124px;
         max-width: 300px;
     }
 
