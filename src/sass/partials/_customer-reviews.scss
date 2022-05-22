@@ -1,0 +1,70 @@
+.splide {
+    
+    &__slide {
+        height: 540px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    &__quote-container {
+        background-color: #FAFAFA;
+        width: 280px;
+        height: 255px;
+        padding-top: 45px;
+        position: relative;
+        z-index: -2;
+        
+        &::before {
+            content: url(../images/customer-reviews/quotes.png);
+            position: absolute;
+            fill: black;
+            z-index: -1;
+            width: 54px;
+            height: 40px;
+            left: 67px;
+            top: 27px;
+        }
+
+        &::after {
+            content: "";
+            height: 6px;
+            width: 23px;
+            top: 106%;
+            left: 50%;
+            display: inline-block;
+            position: absolute;
+            border-bottom: 4px dotted $color-raspberry;
+            transform: translateX(-50%);
+        }
+        
+    }
+
+    &__quote {
+        z-index: 2;
+        margin: 0 auto;
+        font-size: 12px;
+        font-weight: 500;
+        max-width: 205px;
+        text-align: center;
+        $lineH: 2em;
+        line-height: $lineH;
+        padding: $lineH;
+        padding-block: 0;/*reset to set first line right at top */
+        background: repeating-linear-gradient(transparent 0 calc($lineH - 1px), #E1E1E1 0  $lineH);
+    }
+
+    &__name {
+        font-size: 14px;
+        font-weight: 500;
+        margin-top: 10px;
+    }
+}
+.container {
+    .splide__pagination__page.is-active {
+        background-color: $color-raspberry;
+        transform: scale(1.2)
+    }
+}
