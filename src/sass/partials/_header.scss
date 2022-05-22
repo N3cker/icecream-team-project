@@ -94,6 +94,7 @@ header {
             width: 114px;
             height: 48px;
             color: rgba(255, 255, 255, 1);
+            
         }
     }
     
@@ -109,9 +110,9 @@ header {
        .numbers {
            display: flex;
            position: relative;
+            z-index: 2;
            flex-direction: column;
            position: absolute;
-           z-index: 2;
            top: 0;
            right: 0;
            font-size: 28px;
