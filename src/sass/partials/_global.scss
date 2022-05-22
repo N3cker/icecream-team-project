@@ -56,7 +56,6 @@ body {
         font-size: 34px;
         font-weight: 400;
         color: $color-raspberry;
-        margin: 100px;
         letter-spacing: 4%;
         text-align: center;
 
@@ -83,13 +82,18 @@ section {
 
 .container {
     margin: 0 auto;
-    max-width: 280px;
+    width: 100%;
+    padding: 0 20px;
+
+    @media (min-width:320px) and (max-width: 767px) {
+        max-width: 480px;
+    }
     
     @media (min-width: 768px) and (max-width: 1279px) {
         max-width: 700px;
     }
     
     @media (min-width: 1280px) {
-        max-width: 1050px;
+        max-width: 1080px;
     }
 }

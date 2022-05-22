@@ -1,0 +1,308 @@
+.contact {
+  background-image: linear-gradient(to bottom, $color-white 13%, $color-pink-background 13%);
+}
+
+.contact__box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.contact__btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 54px;
+  gap: 10px;
+}
+
+.info__section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 220px;
+  height: 427px;
+  background: $color-white;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+  padding: 43px 20px;
+}
+
+.contact__heading {
+  width: 80px;
+  height: 16px;
+  background: #f0d1a5;
+  border-radius: 4px;
+  margin: 0 120px 25px 20px;
+  background-color: $color-creamy;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact__heading--text {
+  font-weight: 500;
+  font-size: 12px;
+  color: $color-white;
+}
+
+.contact__heading--green {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 70px 25px 20px;
+  width: 130px;
+  height: 16px;
+  background: #f0d1a5;
+  border-radius: 4px;
+  background-color: $color-green;
+}
+
+.contact__list {
+  padding-top: 25px;
+  &:not(:last-child) {
+    padding-bottom: 25px;
+    border-bottom: 1px solid #e1e1e1;
+  }
+}
+
+.contact__item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.contact__town {
+  margin-bottom: 10px;
+}
+
+.contact__paragraph {
+  font-family: $font-main;
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+}
+
+.contact__item--hours {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 186%;
+  color: $color-pink-2;
+}
+
+.contact__item--description {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  color: #907e82;
+  //   Dodać ten kolor do zmiennych
+}
+
+.contact__link--item {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  color: #907e82;
+  text-decoration: none;
+  &:hover,
+  &:focus {
+    color: #baa9ad;
+  }
+}
+
+.contact__btn--item {
+  &:first-child {
+    background-color: $color-raspberry;
+    color: $color-white;
+    fill: $color-raspberry;
+    &:hover,
+    &:focus {
+      background-color: $color-btn-raspberry-hvr;
+    }
+  }
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  width: 161px;
+  height: 44px;
+  background: #ffffff;
+  border-radius: 22px;
+  border-style: none;
+  background-color: $color-white;
+  color: $color-raspberry;
+  fill: $color-white;
+  &:hover,
+  &:focus {
+    background-color: $color-btn-white-hvr;
+  }
+}
+
+.contact__btn--icon {
+  margin: 0 5%;
+}
+
+@media screen and (min-width: 768px) {
+  .contact {
+    background-image: linear-gradient(to bottom, $color-white 22%, $color-pink-background 22%);
+  }
+
+  .container {
+    padding: 0;
+  }
+
+  .contact__box {
+    flex-direction: row;
+  }
+
+  .contact__btn {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .contact__btn--item {
+    width: 191.45px;
+    height: 44px;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  .info__section {
+    width: 220px;
+    height: 544px;
+    padding: 50px 31px;
+  }
+
+  .contact__list {
+    padding-top: 30px;
+    &:not(:last-child) {
+      padding-bottom: 30px;
+    }
+  }
+
+  .contact__town {
+    padding-bottom: 14px;
+  }
+
+  .contact__item:not(:last-child) {
+    margin-bottom: 16px;
+  }
+
+  .contact__paragraph {
+    font-size: 14px;
+  }
+
+  .contact__item--description {
+    font-size: 14px;
+  }
+
+  .contact__item--hours {
+    font-size: 14px;
+  }
+
+  .contact__link--item {
+    font-size: 14px;
+    line-height: 183%;
+  }
+
+  .contact__heading {
+    margin: 0;
+    width: 73px;
+    height: 28px;
+  }
+  .contact__heading--green {
+    margin: 0;
+    width: 138px;
+    height: 28px;
+  }
+
+  .contact__btn {
+    margin-top: 81px;
+  }
+
+  .contact__heading--text {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .contact__box {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .contact {
+    background-image: url(../images/contact/background-contact.png),
+      linear-gradient(to bottom, $color-white 23%, $color-pink-background 23%);
+    background-repeat: no-repeat;
+    background-size: 382px;
+    background-color: $color-pink-background;
+    background-size: contain;
+    background-position-y: center;
+
+    // background-image: linear-gradient(to bottom, $color-white 23%, $color-pink-background 23%);
+  }
+
+  .info__section {
+    width: 330px;
+    height: 572px;
+    padding: 51px 44px 62px;
+  }
+
+  .contact__box {
+    gap: 29px;
+  }
+
+  .contact__town {
+    padding-bottom: 0;
+  }
+
+  .contact__paragraph {
+    line-height: 186%;
+    font-size: 16px;
+  }
+  .contact__item--description {
+    line-height: 183%;
+    font-size: 16px;
+  }
+
+  .contact__item--hours {
+    line-height: 186%;
+    font-size: 16px;
+  }
+  .contact__link--item {
+    font-size: 16px;
+  }
+
+  .contact__list {
+    padding-top: 32px;
+  }
+
+  .contact__heading {
+    width: 73px;
+    height: 28px;
+    border-radius: 6px;
+  }
+  .contact__heading--text {
+    font-size: 16px;
+    line-height: 186%;
+    letter-spacing: 0.04em;
+  }
+
+  .contact__heading--green {
+    font-size: 16px;
+    line-height: 186%;
+    letter-spacing: 0.04em;
+  }
+
+  .contact__btn--icon {
+    margin-left: 13px;
+    justify-content: center;
+  }
+
+  .contact__btn {
+    margin-top: 86px;
+    gap: 15px;
+  }
+}

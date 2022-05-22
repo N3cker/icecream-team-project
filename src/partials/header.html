@@ -1,45 +1,48 @@
 <header>
-    <div class="container">
-        <div class="topbox">
-            <a class="topbox__logo" href="#">
-                <picture class="logo">
-                    <source srcset="/images/header/mobile/logo-mobile.png 1x, /images/header/mobile/logo-mobile@2x.png 2x"
-                        media="(min-width: 320px) and (max-width: 767px)" />
-                    <source srcset="/images/header/tablet/logo-tablet.png 1x, /images/header/tablet/logo-tablet@2x.png 2x"
-                        media="(min-width: 768px) and (max-width: 1199px)" />
-                    <source srcset="/images/header/desktop/logo-desktop.png 1x, /images/header/desktop/logo-desktop@2x.png 2x"
-                        media="(min-width: 1200px)" />
-                    <img src="/images/header/mobile/logo-mobile.png" alt="logo">
-                </picture>
-            </a>
-            <nav class="topbox__navi">
-                <ul class="web">
-                    <li class="web__item">
-                        <a class="web__link" href="#">Home</a>
-                    </li>
-                    <li class="web__item">
-                        <a class="web__link" href="#">About us</a>
-                    </li>
-                    <li class="web__item">
-                        <a class="web__link" href="#">How it's made?</a>
-                    </li>
-                    <li class="web__item">
-                        <a class="web__link" href="#">Our products</a>
-                    </li>
-                    <li class="web__item">
-                        <a class="web__link" href="#">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-            <button class="button button--header" type="button">Buy now</button>
-        </div>
+    <div class="topbox">
+        <a class="topbox__logo" href="#">
+            <picture class="logo">
+                <source srcset="/images/header/mobile/logo-mobile.png 1x, /images/header/mobile/logo-mobile@2x.png 2x"
+                    media="(min-width: 320px) and (max-width: 767px)" />
+                <source srcset="/images/header/tablet/logo-tablet.png 1x, /images/header/tablet/logo-tablet@2x.png 2x"
+                    media="(min-width: 768px) and (max-width: 1199px)" />
+                <source srcset="/images/header/desktop/logo-desktop.png 1x, /images/header/desktop/logo-desktop@2x.png 2x"
+                    media="(min-width: 1200px)" />
+                <img src="/images/header/mobile/logo-mobile.png" alt="logo">
+            </picture>
+        </a>
+        <nav class="topbox__navi">
+            <ul class="web">
+                <li class="web__item">
+                    <a class="web__link" href="#">Home</a>
+                </li>
+                <li class="web__item">
+                    <a class="web__link" href="#">About us</a>
+                </li>
+                <li class="web__item">
+                    <a class="web__link" href="#">How it's made?</a>
+                </li>
+                <li class="web__item">
+                    <a class="web__link" href="#">Our products</a>
+                </li>
+                <li class="web__item">
+                    <a class="web__link" href="#">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <svg class="header__menu" width="20px" height="12px" data-menu-open>
+            <use href="./images/sprite-svg/icons.svg#icon-menu_24px"></use>
+        </svg>
+        <button class="btn btn--white" type="button">Buy now <span class="btn--white_text">></span></button>
+    </div>
+    <div class="container see">
         <div class="centralbox">
             <div class="centralbox__passion">
                 <h1 class="centralbox__passion_title">
-                    ice cream made with passion
+                    ice cream made with <span class="centralbox__passion_title2">passion</span> 
                 </h1>
-                <button class="button button--products" type="button">Products</button>
-                <button class="button butto--made" type="button">How it's made?</button>
+                <button class="btn btn--raspberry-hero" type="button">Products</button>
+                <button class="btn btn--white-hero" type="button">How it's made?</button>
             </div>
             <div class="milktext">
                 <picture class="fotomilk">
@@ -49,10 +52,19 @@
                         media="(min-width: 1200px)" />
                     <img src="/images/header/tablet/milk-tablet.png" alt="a jug of milk">
                 </picture>
+                <div class="milktext__item">
+                    <p class="milktext__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                    </p>
+                    <a class="milktext__icon" href="#">
+                        <svg class="milk__icon" width="8px" height="8px">
+                            <use href="./images/sprite-svg/icons.svg#icon-Vector-1"></use>
+                        </svg>
+                    </a>
+                </div>
                 
-                <p class="milktext__text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                </p>
+            </div>
+            <div class="centralbox__ellipse">
             </div>
             <picture class="fotoice">
                 <source srcset="/images/header/mobile/ice-mobile.png 1x, /images/header/mobile/ice-mobile@2x.png 2x"
@@ -77,3 +89,26 @@
         </div>
     </div>
 </header>
+
+<div class="mobile-menu is-hidden" data-menu >
+    <button type="button" class="close-btn" data-menu-close>x</button>
+    <button class="botton botton--white" type="button">Buy now <span class="btn--white_text">></span></button>
+    <ul class="menu">
+        <li class="menu__item">
+            <a class="menu__link" href="#">Home</a>
+        </li>
+        <li class="menu__item">
+            <a class="menu__link" href="#">About us</a>
+        </li>
+        <li class="menu__item">
+            <a class="menu__link" href="#">How it's made?</a>
+        </li>
+        <li class="menu__item">
+            <a class="menu__link" href="#">Our products</a>
+        </li>
+        <li class="menu__item">
+            <a class="menu__link" href="#">Contact</a>
+        </li>
+    </ul>
+</div>
+<script src="js/mobile-menu.js"></script>
