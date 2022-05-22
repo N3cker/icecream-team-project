@@ -1,4 +1,42 @@
-.social__icon {
-    width: 32px;
-    height: 32px;
+.social__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    fill: $color-white;
+    background: $color-pink-2;
 }
+
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .social__link {
+        width: 32px;
+        height: 32px;
+    }
+    .social__icon {
+        width: 32px;
+        height: 32px;
+
+        &:not(:last-child) {
+            margin-right: 28px;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    
+    .social__link {
+        width: 34px;
+        height: 34px;
+
+        &:hover,
+        &:focus {
+            background-color: $color-btn-raspberry-hvr;
+        }
+    }
+    .social__icon {
+        width: 34px;
+        height: 34px;
+    }
+}
+
