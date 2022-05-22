@@ -30,10 +30,8 @@
 
         /* Tomek */
 
-        <symbol id="icon-Burger" viewBox="0 0 46 32">
-            <path d="M0 2.286h45.714"></path>
-            <path d="M0 16h45.714"></path>
-            <path d="M0 29.714h45.714"></path>
+        <symbol id="icon-menu_24px" viewBox="0 0 48 32">
+        <path d="M0 5.333v-5.333h48v5.333h-48zM0 18.667h48v-5.333h-48v5.333zM0 32h48v-5.333h-48v5.333z"></path>
         </symbol>
 
         /* Łukasz */
