@@ -1,5 +1,6 @@
 .splide {
     padding-bottom: 0;
+    
     &__slide {
         height: 540px;
         display: flex;
@@ -16,6 +17,16 @@
         padding-top: 45px;
         position: relative;
         z-index: -2;
+
+        @media (min-width: 768px) and (max-width: 1279px) {
+            width: 600px;
+            height: 150px;
+        }
+
+        @media (min-width: 1280px) {
+            width: 700px;
+            height: 140px;
+        }
         
         &::before {
             content: url(../images/customer-reviews/quotes.png);
@@ -31,15 +42,14 @@
         &::after {
             content: "";
             height: 6px;
-            width: 23px;
+            width: 22px;
             top: 106%;
             left: 50%;
             display: inline-block;
             position: absolute;
             border-bottom: 4px dotted $color-raspberry;
             transform: translateX(-50%);
-        }
-        
+        }      
     }
 
     &__quote {
@@ -54,6 +64,14 @@
         padding: $lineH;
         padding-block: 0;/*reset to set first line right at top */
         background: repeating-linear-gradient(transparent 0 calc($lineH - 1px), #E1E1E1 0  $lineH);
+        
+        @media (min-width: 768px) and (max-width: 1279px) {
+            max-width: 420px;
+        }
+
+        @media (min-width: 1280px) {
+            max-width: 560px;
+        }
     }
 
     &__name {
