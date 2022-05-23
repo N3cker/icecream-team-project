@@ -62,7 +62,7 @@
         line-height: 2em;
         padding: 2em;
         padding-block: 0;
-        background: repeating-linear-gradient(transparent 0 calc(2em - 1px), #E1E1E1 0  2em);
+        background: repeating-linear-gradient(transparent, 0 calc(2em - 1px), #E1E1E1 0  2em);
         
         @media (min-width: 768px) and (max-width: 1279px) {
             max-width: 490px;
