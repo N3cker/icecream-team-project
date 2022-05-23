@@ -12,12 +12,14 @@
 .advantages__values2::before {
     content: url(../images/advantages/icon2advantages.png);
     margin-bottom: 16px;
+    margin-top: 38px;
     display: flex;
 }
 
 .advantages__values3::before {
     content: url(../images/advantages/icon3advantages.png);
     margin-bottom: 16px;
+    margin-top: 38px;
     display: flex;
 }
 
@@ -33,7 +35,6 @@
     margin-right: auto;
 
     &__item {
-        margin-top: 38px;
         margin-left: 20px;
         margin-right: 70px;
     }
@@ -48,8 +49,8 @@
         letter-spacing: 0.04em;
         text-transform: uppercase;
         padding-bottom: 12px;
+        // margin-top: 38px;
         color: $color-raspberry;
-
     }
 
     &__p {
@@ -101,11 +102,13 @@
     .advantages__values2::before {
         content: url(../images/advantages/icon2advantages.png);
         margin-bottom: 36px;
+        margin-top: 0;
     }
 
     .advantages__values3::before {
         content: url(../images/advantages/icon3advantages.png);
         margin-bottom: 36px;
+        margin-top: 0;
     }
 }
 
@@ -145,10 +148,12 @@
     .advantages__values2::before {
         content: url(../images/advantages/icon2advantages.png);
         margin-bottom: 40px;
+        margin-top: 0;
     }
 
     .advantages__values3::before {
         content: url(../images/advantages/icon3advantages.png);
         margin-bottom: 40px;
+        margin-top: 0;
     }
 }
