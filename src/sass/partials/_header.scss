@@ -231,7 +231,7 @@ header {
     header, .see {
         height: 665px;
     }
-    
+  
     .topbox {
         max-width: 1200px;
         margin: 0 auto;
@@ -267,9 +267,11 @@ header {
             }
         }
     }
+
         .active {
             color: $color-raspberry;
         }
+
     .centralbox {
         
         &__passion {
@@ -328,6 +330,7 @@ header {
             height: 30px;
         }
     }
+  
     .writing {
         font-size: 14px;
         transform: translate(-35px, -18px);
@@ -335,6 +338,7 @@ header {
     .btn--raspberry-hero, .btn--white-hero  {
         padding:12px 20px;
     }
+
 }
 
 /*--------okno modalne-style------------*/
