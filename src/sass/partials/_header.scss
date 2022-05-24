@@ -121,12 +121,13 @@ header {
             width: 114px;
             height: 48px;
             color: rgba(255, 255, 255, 1);
-            margin-bottom: 20px;
+            margin-bottom: 10px;
         }
         &__item {
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: end;
+            margin-bottom: 10px;
         }
         &__icon {
             display: flex;
@@ -187,9 +188,12 @@ header {
            }
        }
        .writing {
+           position: relative;
+           transform: translate(-17px, -10px);
            font-size: 8px;
            color: white;
-           font-weight: 400;
+           font-weight: 400; 
+           text-align: end;
        }
        .centralbox {
            
@@ -227,9 +231,7 @@ header {
     header, .see {
         height: 665px;
     }
-    .active {
-            color: $color-raspberry;
-        }
+    
     .topbox {
         max-width: 1200px;
         margin: 0 auto;
@@ -265,6 +267,9 @@ header {
             }
         }
     }
+        .active {
+            color: $color-raspberry;
+        }
     .centralbox {
         
         &__passion {
@@ -325,6 +330,7 @@ header {
     }
     .writing {
         font-size: 14px;
+        transform: translate(-35px, -18px);
     }
     .btn--raspberry-hero, .btn--white-hero  {
         padding:12px 20px;
@@ -381,6 +387,7 @@ header {
         font-weight: 700;
         margin: 60px 20px 22px 20px;
         line-height: 1.3em;
+        cursor: pointer;
 }
 .botton--white {
     background-color: $color-white;
