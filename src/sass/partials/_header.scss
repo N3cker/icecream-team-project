@@ -219,9 +219,7 @@ header {
     header, .see {
         height: 665px;
     }
-    .page__active {
-            color: $color-raspberry;
-        }
+
     .topbox {
         max-width: 1200px;
         margin: 0 auto;
@@ -257,6 +255,9 @@ header {
             }
         }
     }
+         .active {
+             color: $color-raspberry;
+         }
     .centralbox {
         
         &__passion {
