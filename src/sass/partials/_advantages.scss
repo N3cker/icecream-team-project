@@ -12,12 +12,14 @@
 .advantages__values2::before {
     content: url(../images/advantages/icon2advantages.png);
     margin-bottom: 16px;
+    margin-top: 38px;
     display: flex;
 }
 
 .advantages__values3::before {
     content: url(../images/advantages/icon3advantages.png);
     margin-bottom: 16px;
+    margin-top: 38px;
     display: flex;
 }
 
@@ -26,14 +28,13 @@
     background-color: $color-pink-background;
     position: relative;
     background-size: 100%;
-    padding-top: 39px;
+    // padding-top: 39px;
     padding-bottom: 97px;
     
     margin-left: auto;
     margin-right: auto;
 
     &__item {
-        margin-top: 38px;
         margin-left: 20px;
         margin-right: 70px;
     }
@@ -48,8 +49,8 @@
         letter-spacing: 0.04em;
         text-transform: uppercase;
         padding-bottom: 12px;
+        // margin-top: 38px;
         color: $color-raspberry;
-
     }
 
     &__p {
@@ -69,7 +70,7 @@
 @media screen and (min-width: 768px) and (max-width: 1199px) {
     .advantages{
         display: flex;
-        padding-top: 66px;
+        // padding-top: 66px;
         padding-bottom: 140px;
 
         &__p {
@@ -101,11 +102,13 @@
     .advantages__values2::before {
         content: url(../images/advantages/icon2advantages.png);
         margin-bottom: 36px;
+        margin-top: 0;
     }
 
     .advantages__values3::before {
         content: url(../images/advantages/icon3advantages.png);
         margin-bottom: 36px;
+        margin-top: 0;
     }
 }
 
@@ -113,7 +116,7 @@
     .advantages {
         display: flex;
         justify-content: center;
-        padding-top: 39px;
+        // padding-top: 39px;
         padding-bottom: 139px;
 
         &__p {
@@ -145,10 +148,12 @@
     .advantages__values2::before {
         content: url(../images/advantages/icon2advantages.png);
         margin-bottom: 40px;
+        margin-top: 0;
     }
 
     .advantages__values3::before {
         content: url(../images/advantages/icon3advantages.png);
         margin-bottom: 40px;
+        margin-top: 0;
     }
 }
