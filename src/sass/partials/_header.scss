@@ -121,12 +121,13 @@ header {
             width: 114px;
             height: 48px;
             color: rgba(255, 255, 255, 1);
-            margin-bottom: 20px;
+            margin-bottom: 10px;
         }
         &__item {
             display: flex;
             flex-direction: column;
-            justify-content: center;
+            justify-content: end;
+            margin-bottom: 10px;
         }
         &__icon {
             display: flex;
@@ -146,7 +147,10 @@ header {
         }
         
     }
-        
+        .milk__icon {
+            width: 8px;
+            height: 8px;
+        }
        .fotogirl {
            position: absolute;
            bottom: 33px;
@@ -182,6 +186,14 @@ header {
                 background-color: white;
                 border-radius: 50%;
            }
+       }
+       .writing {
+           position: relative;
+           transform: translate(-17px, -10px);
+           font-size: 8px;
+           color: white;
+           font-weight: 400; 
+           text-align: end;
        }
        .centralbox {
            
@@ -219,7 +231,7 @@ header {
     header, .see {
         height: 665px;
     }
-
+  
     .topbox {
         max-width: 1200px;
         margin: 0 auto;
@@ -238,7 +250,7 @@ header {
     .web {
         display: flex;
         justify-content: space-between;
-        gap: 35px;
+        gap: 30px;
         &__item {
             display: flex;
             
@@ -255,9 +267,11 @@ header {
             }
         }
     }
-         .active {
-             color: $color-raspberry;
-         }
+
+        .active {
+            color: $color-raspberry;
+        }
+
     .centralbox {
         
         &__passion {
@@ -297,6 +311,14 @@ header {
             margin-top: 30px;
             padding-right: 80px;
         }
+        &__icon {
+            width: 26px;
+            height: 26px;
+        }
+        .milk__icon {
+            width: 10px;
+            height: 10px;
+        }
     }
     .numbers {
         font-size: 46px;
@@ -308,7 +330,15 @@ header {
             height: 30px;
         }
     }
-    
+  
+    .writing {
+        font-size: 14px;
+        transform: translate(-35px, -18px);
+    }
+    .btn--raspberry-hero, .btn--white-hero  {
+        padding:12px 20px;
+    }
+
 }
 
 /*--------okno modalne-style------------*/
@@ -358,9 +388,10 @@ header {
         border-radius: 20px;
         padding: 13px 25px;
         font-size: 16px;
-        font-weight: 700px;
+        font-weight: 700;
         margin: 60px 20px 22px 20px;
         line-height: 1.3em;
+        cursor: pointer;
 }
 .botton--white {
     background-color: $color-white;
