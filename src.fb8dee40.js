@@ -7,4 +7,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss"),require("@splidejs/splide/dist/css/splide.min.css");var e=s(require("@splidejs/splide"));function s(e){return e&&e.__esModule?e:{default:e}}document.addEventListener("DOMContentLoaded",function(){new e.default(".splide",{arrows:!1,autoplay:!0,type:"loop"}).mount()});
 },{"./sass/main.scss":"clu1","@splidejs/splide/dist/css/splide.min.css":"bAw6","@splidejs/splide":"zEjv"}]},{},["Focm"], null)
-//# sourceMappingURL=/icecream-team-project/src.13d3a24c.js.map
+//# sourceMappingURL=/icecream-team-project/src.fb8dee40.js.map
