@@ -342,7 +342,7 @@ header {
     display: flex;
     flex-direction: column;
     height: 502px;
-    width: 250px;
+    width: 320px;
     background-color: $color-pink-3;
     position: fixed;
     z-index: 3;
@@ -370,7 +370,7 @@ header {
                 }
         }
         &__item {
-            width: 250px;
+            width: 320px;
             height: 42px;
             border: 1px solid #E18298;
             padding-left: 20px;
